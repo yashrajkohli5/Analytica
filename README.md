@@ -1,4 +1,4 @@
-# 🧼 Analytica: Modular Data Engineering & AI Discovery Suite
+# 🧼 Analytica: Modular Data Analysis & AI Reporting Suite
 
 **Analytica** is a professional-grade, end-to-end data processing platform. It bridges the gap between raw data ingestion and automated statistical intelligence, providing a guided 8-step workflow for data cleaning, structural transformation, and high-dimensional visualization.
 
