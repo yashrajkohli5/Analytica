@@ -68,7 +68,7 @@ def main():
             csv_data = st.session_state.main_df.to_csv(index=False).encode('utf-8')
             
             st.download_button(
-                label="📥 Download Current CSV",
+                label="📥 Download Cleaned CSV",
                 data=csv_data,
                 file_name="analytica_processed_data.csv",
                 mime="text/csv",
@@ -161,4 +161,5 @@ def main():
         st.info("👋 Welcome! Please upload your CSV file to begin.")
 
 if __name__ == "__main__":
+
     main()
