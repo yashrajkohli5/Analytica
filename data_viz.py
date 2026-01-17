@@ -18,7 +18,6 @@ def run_eda(df):
     # Guardrail: Categories with < 15 unique values for better legends
     legend_cols = [c for c in cat_cols if df[c].nunique() < 15]
 
-    # --- GLOBAL CROSS-FILTER SIDEBAR ---
     tabs = st.tabs(["1. Univariate", "2. Bivariate", "3. Multivariate"])
 
     # --- TAB 1: UNIVARIATE  ---
@@ -167,3 +166,4 @@ def run_eda(df):
                     fig = px.sunburst(df, path=path, values=val, color=val)
 
                     st.plotly_chart(fig, use_container_width=True)
+
