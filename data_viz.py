@@ -19,13 +19,6 @@ def run_eda(df):
     legend_cols = [c for c in cat_cols if df[c].nunique() < 15]
 
     # --- GLOBAL CROSS-FILTER SIDEBAR ---
-    st.sidebar.subheader("🎯 Active Segment Filter")
-    f_cat = st.sidebar.selectbox("Focus on Category:", [None] + cat_cols, key="global_f_cat")
-    if f_cat:
-        unique_vals = df[f_cat].unique().tolist()
-        selected_vals = st.sidebar.multiselect(f"Select {f_cat}:", unique_vals, default=unique_vals)
-        df = df[df[f_cat].isin(selected_vals)]
-
     tabs = st.tabs(["1. Univariate", "2. Bivariate", "3. Multivariate"])
 
     # --- TAB 1: UNIVARIATE  ---
@@ -172,4 +165,5 @@ def run_eda(df):
                 val = st.selectbox("Sector Size:", num_cols, key="sun_val")
                 if path:
                     fig = px.sunburst(df, path=path, values=val, color=val)
+
                     st.plotly_chart(fig, use_container_width=True)
