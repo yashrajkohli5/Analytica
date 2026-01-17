@@ -68,7 +68,7 @@ def main():
             csv_data = st.session_state.main_df.to_csv(index=False).encode('utf-8')
             
             st.download_button(
-                label="📥 Download Cleaned CSV",
+                label="📥 Download CSV",
                 data=csv_data,
                 file_name="analytica_processed_data.csv",
                 mime="text/csv",
@@ -163,3 +163,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
