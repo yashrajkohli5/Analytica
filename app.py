@@ -24,7 +24,7 @@ def update_df(new_df):
     st.rerun()
 
 def main():
-    st.title("🧼 Analytica: Data Engineering & Discovery")
+    st.title("🧼 Analytica: Data Analysis & Discovery Tool")
     
     df_input = upload_file()
 
@@ -158,9 +158,10 @@ def main():
             run_automated_discovery(st.session_state.main_df)
 
     else:
-        st.info("👋 Welcome! Please upload your CSV file to begin.")
+        st.info("👋 Welcome! Please upload your CSV or Excel file to begin.")
 
 if __name__ == "__main__":
 
     main()
+
 
