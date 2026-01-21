@@ -11,7 +11,7 @@ from data_pivot_table import create_pivot_table
 from data_discovery import filter_data, group_data, run_automated_discovery
 from data_viz import run_eda
 
-st.set_page_config(page_title="Analytica Pro", layout="wide", page_icon="🧼")
+st.set_page_config(page_title="Analytica", layout="wide", page_icon="🧼")
 
 def update_df(new_df):
     """Handles state history and updates the main dataframe."""
@@ -163,5 +163,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
