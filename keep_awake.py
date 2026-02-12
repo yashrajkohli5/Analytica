@@ -25,5 +25,5 @@ def wake_up_apps(urls):
 
 if __name__ == "__main__":
     # Add all your Streamlit URLs here
-    my_apps =  "https://analytica-ai.streamlit.app/",
+    my_apps =  ["https://analytica-ai.streamlit.app/", "https://ai-powered-time-table-generator.streamlit.app/"]
     wake_up_apps(my_apps)
